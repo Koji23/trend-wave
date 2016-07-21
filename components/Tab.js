@@ -7,6 +7,7 @@ const Tab = (props) => {
   return (
     <Panel>
       <h3>{props.header}<br/><small>{props.sub}</small></h3>
+      <div>{props.info}</div>
     </Panel>
   );
 }

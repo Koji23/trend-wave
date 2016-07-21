@@ -75,21 +75,17 @@ class Dashboard extends React.Component {
           </Navbar>
         </Row>
         <Row>
-          <Col xs={6} md={4}><Tab header="Public Sentiment" sub="(Twitter Sentiment)"/></Col>
-          <Col xs={6} md={4}><Tab header="Emotional Feedback" sub="(Facebook Reactions)"/></Col>
-          <Col xsHidden md={4}><Tab header="Trend History" sub="(Need to figure out this data)"/></Col>
+          <Col xs={6} md={4}><Tab info={this.state.publicSentiment} header="Public Sentiment" sub="(Twitter Sentiment)"/></Col>
+          <Col xs={6} md={4}><Tab info={this.state.emotionalFeedback} header="Emotional Feedback" sub="(Facebook Reactions)"/></Col>
+          <Col xsHidden md={4}><Tab info={this.state.trendHistory} header="Trend History" sub="(Need to figure out this data)"/></Col>
         </Row>
         <Row>
           <Col md={6} mdPush={6}>
             <Row>  
-              <Panel>
-                Representative Tweet
-              </Panel>
+              <Tab info={this.state.trendHistory} header="Representative Tweet" sub="(Need to figure out this data)" />
             </Row>
             <Row>
-              <Panel>
-                Representative News Source
-              </Panel>
+              <Tab info={this.state.trendHistory} header="Representative News Source" sub="(Need to figure out this data)" />
             </Row>
           </Col>
           <Col md={6} mdPull={6}>
